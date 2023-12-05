@@ -2,7 +2,8 @@
 
 
 ### Problem Statement:
-Given a text and a reason, predict if `text` satisfies the `reason`. 
+Given a text and a reason, predict if `text` satisfies the `reason`.  
+Please refer `report.pdf` for more details.
 
 ### Data Insights:
 First, I conducted some Exploratory Analysis of the Data and had the following insights:
@@ -11,13 +12,7 @@ First, I conducted some Exploratory Analysis of the Data and had the following i
 - The maximum `text` length of the train data was 66 and it was 186 for the test data.
 - And the maximum `reason` length of the train data is 16 and it was 13 for test data.
 - Most `text` sentences were neutral in polarity like any statement or a fact.
-- Same was the case with the polarity of `reason`.
-- Here is the top 20 unigrams, bigrams and trigrams in the `text` field
- 
- 
- 
-
-
+- Same was the case with the polarity of `reason`. 
 
 ### Baseline approach:
 1. **Tokenization**: Tokenize the text and reason features using a pre-trained tokenizer `distilbert-base-uncased`
